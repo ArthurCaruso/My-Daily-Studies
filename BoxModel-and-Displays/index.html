@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+
+    <div id="page">
+        <div class="divTitles" id="divTitleOne">
+            <h1 id="titleOne">CSS: Styling HTML Elements</h1>
+        </div>
+
+        
+            <div id="subTitleDiv">
+                <p id="subTitle">First Steps</p>
+            </div>
+        
+
+        <div id="canva1">
+            <h2 id="h2BoxModel">Box Model</h2>
+        </div>
+
+        <p>Box model is the way HTML elements are arranged, which makes the stylesheets treat HTML elements as 
+        "canvas" with border, margin and padding. Thus, border is the line that delimits the frontiers of an 
+        element, padding is the distance between a content and its border, and margin is the distance between elements.</p>
+
+
+        <h3>How DevTools can help in understanding the Box Model</h3>
+        <p>The DevTools is a Chrome browser tool that assists in the analysis of web pages, we can use this tool to 
+        help us understand the box model.</p>
+        
+        <div id="back">
+            
+            <div id="margin">
+            <p>margin</p>
+                <div id="border">
+                    <p>border</p>
+                    <div id="padding">
+                        <p>padding</p>
+                        <div id="cont">
+                            <p>content</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="canva2">
+            <h2 id="h2Display">Display</h2>
+        </div>
+
+        <h3>HTML elements: Inline and Block.</h3>
+        <p>In CSS we have a property tha can change the display of elements. Before explaining what the "Display" property can do, we first need to understand the dispositions that HTML elements can take on a page.<br> Some tags are arranged occupying an entire line, while others manage to queue up on the same line. These mates are called "Block" and "Inline" respectively.</p>
+
+        <h4>Inline</h4>
+        <div class="backg">
+            <div class="inline"></div>
+            <div class="inline"></div>
+            <div class="inline"></div>
+        </div>
+
+        <h4>Block</h4>
+        <div class="backg">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+
+        <h3>How we can use the "Display" property</h3>
+        <p>We can use this CSS property to turn elements that work as "inline" into "block" elements, and also the opposite.</p>
+        <p>For example, the "span" tag is an element that behaves like "Inline", as we can see below.</p>
+        
+        <div class="backg2">
+            <span class="span1">I am a "span" tag</span>
+            <span class="span1">I am a "span" tag</span>
+            <span class="span1">I am a "span" tag</span>
+        </div>  
+
+        <p>However, if you apply the "display: block;" property to these tags, they behave like block tags. As in the example below.</p>
+        <div class="backg2-2">
+            <span class="span2">I am a "span" tag</span>
+            <span class="span2">I am a "span" tag</span>
+            <span class="span2">I am a "span" tag</span>
+        </div>  
+        <br>
+        <p>Otherwise, we have elements of the "Block" type that can be transformed into "Inline", as is the example of "H1". In its original form it looks like this:</p>
+        <div class="backg3">
+            <h1 class="h1-1">I am a "H1" title</h1>
+            <h1 class="h1-1">I am a "H1" title</h1>
+            <h1 class="h1-1">I am a "H1" title</h1>
+        </div>"
+        <p>Applying then the property "display: inline;" it will behave as follows:</p>
+        <div class="backg3-2">
+            <h1 class="h1-2">I am a "H1" title</h1>
+            <h1 class="h1-2">I am a "H1" title</h1>
+            <h1 class="h1-2">I am a "H1" title</h1>
+        </div>
+        <br>
+
+        <p>A third option to place "Block" elements vertically aligned is to use the "display: inline-block;" property. This is because when we use the "inline" property, the elements lose their height and width, and cannot be edited with the "width" and "height" properties.</p>
+        <br>
+        <h4>Example 1: original</h4>
+        <p>Example of "h2" tags without display change.</p>
+
+        <div class="fundo4">
+            <h2 class="h2-1">I am a "H1" title</h2>
+            <h2 class="h2-1">I am a "H1" title</h2>
+            <h2 class="h2-1">I am a "H1" title</h2>
+        </div>
+        <br>
+
+        <h4>Example 2: "inline"</h4>
+        <p>Example of "h2" tags changed to "inline".</p>
+
+        <div class="fundo4-2">
+            <h2 class="h2-2">I am a "H1" title</h2>
+            <h2 class="h2-2">I am a "H1" title</h2>
+            <h2 class="h2-2">I am a "H1" title</h2>
+        </div>
+        <br>
+
+        <h4>Example 3: "inline-block"</h4>
+        <p>Example of "h2" tags changed to "inline-block".</p>
+
+        <div class="fundo4-3">
+            <h2 class="h2-3">I am a "H1" title</h2>
+            <h2 class="h2-3">I am a "H1" title</h2>
+            <h2 class="h2-3">I am a "H1" title</h2>
+        </div>
+        <br>
+        <p>It is important to note that on a responsive page, the 'content' of an 'inline' element can be broken down to a lower block, and to prevent this from happening, the "inline-block" display can be applied.</p>    
+
+    </div>
+</body>
+</html>
