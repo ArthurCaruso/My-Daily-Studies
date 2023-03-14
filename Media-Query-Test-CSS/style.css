@@ -1,0 +1,36 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: cadetblue;
+}
+
+section {
+    width: 95%;
+    height: 100px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+h2 {
+    width: 200%;
+    background-color: darkcyan;
+    padding: 10%;
+    border: 3px solid #facefa;
+    border-radius: 1.3em;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+@media (max-width: 730px) {
+    section {
+        height: 300px;
+        display: inline-block;
+    }
+
+    h2 {
+        padding: 0px;
+        width: 90%;
+    }
+}
